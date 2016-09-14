@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="549.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ever.POS.best.view.InventoryScreenController">
+   <children>
+      <TableView fx:id="productsTable" layoutX="34.0" layoutY="46.0" prefHeight="477.0" prefWidth="639.0">
+         <columns>
+            <TableColumn fx:id="productID" editable="false" prefWidth="84.0" text="PRODUCT ID" />
+            <TableColumn fx:id="productName" editable="false" prefWidth="145.0" text="PRODUCT NAME" />
+            <TableColumn fx:id="productUnit" editable="false" minWidth="6.0" prefWidth="58.0" text="UNIT" />
+            <TableColumn fx:id="productDescription" editable="false" prefWidth="181.0" text="DESCRIPTION" />
+            <TableColumn fx:id="retailPrice" editable="false" prefWidth="83.0" text="RETAIL PRICE" />
+            <TableColumn fx:id="inStock" editable="false" prefWidth="87.0" text="IN STOCK" />
+         </columns>
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
+      </TableView>
+      <AnchorPane layoutX="995.0" layoutY="39.0" minHeight="0.0" minWidth="0.0" prefHeight="790.0" prefWidth="267.0" />
+      <Button layoutX="703.0" layoutY="202.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="150.0" text="EXPORT TO EXCEL">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="703.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleEditProduct" prefHeight="65.0" prefWidth="150.0" text="EDIT PRODUCT">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="703.0" layoutY="46.0" mnemonicParsing="false" onAction="#handleAddProduct" prefHeight="65.0" prefWidth="150.0" text="ADD PRODUCT">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="703.0" layoutY="381.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="150.0" text="DELETE PRODUCT">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="703.0" layoutY="458.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="150.0" text="BACK">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
